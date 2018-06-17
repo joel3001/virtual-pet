@@ -44,4 +44,12 @@ Pet.prototype.checkUp = function() {
     return ('I feel great!')
 }
 
+Pet.prototype.isAlive = function () {
+    if(this.fitness <= 0 || this.hunger >= 10 || this.age >= 30) {
+        return 'Your pet is dead :('
+    } else {
+        return 'Your pet is alive and kicking'
+    }
+};
+
 module.exports = Pet;
