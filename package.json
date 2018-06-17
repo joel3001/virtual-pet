@@ -1,0 +1,14 @@
+{
+  "name": "virtual-pet",
+  "version": "1.0.0",
+  "description": "first JSON npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "JDG",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
+}
