@@ -93,9 +93,9 @@ describe('isAlive', () => {
 
   it('checks if the pet is alive', () => {
     const pet = new Pet('Fido');
-    pet.hunger = 9;
-    pet.fitness = 5;
-    pet.age = 3;
+    pet.hunger = 5;
+    pet.fitness = 7;
+    pet.age = 16;
     pet.isAlive();
     expect(pet.isAlive()).toEqual('Your pet is alive and kicking')
   })
