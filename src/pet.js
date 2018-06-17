@@ -25,7 +25,7 @@ Pet.prototype.walk = function() {
 
 Pet.prototype.feed = function() {
     if((this.hunger - 3) >= 0) {
-        this.hunger - 3
+        this.hunger -= 3
     } else {
         this.hunger = 0
     }
@@ -33,15 +33,15 @@ Pet.prototype.feed = function() {
 
 Pet.prototype.checkUp = function() {
     if(this.fitness <= 3 && this.hunger >= 5) {
-        return ('I am hungry and need a walk')
+        return 'I am hungry and need a walk'
     }
     if(this.fitness <= 3) {
-        return ('I need a walk')
+        return 'I need a walk'
     }
     if(this.hunger >= 5) {
-        return ('I am hungry')
+        return 'I am hungry'
     }
-    return ('I feel great!')
+    return 'I feel great!'
 }
 
 Pet.prototype.isAlive = function () {
